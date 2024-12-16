@@ -1,4 +1,3 @@
-/* STYLES FOR INDEX.HTML (background-image in index.html)*/
 
 body {
     margin: 0;
@@ -12,11 +11,11 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    bottom: 40px;
     background-color: black;
-}
+    bottom: 15px;
+  }
 
-h1 {
+  h1 {
     font-family: Arial, sans-serif;
     margin-bottom: 20px;
     position: relative;
@@ -26,26 +25,26 @@ h1 {
     padding: 10px;
     border-radius: 35px;
     box-shadow: 5px 5px 5px #333;
-}
+  }
 
-/* This is the flex container that holds the doors */
-.door-container-wrapper {
+  /* This is the flex container that holds the doors */
+  .door-container-wrapper {
     display: flex;
     gap: 150px; /* Space between doors */
     justify-content: center;
     align-items: center;
     z-index: 2; /* Ensure doors appear above overlay */
-}
+  }
 
-/* Door container styles for each door */
-.door-container {
+  /* Door container styles for each door */
+  .door-container {
     position: relative;
     width: 150px; /* Door width */
     height: 300px; /* Door height */
-}
+  }
 
-/* Door frame inside each container */
-.door-frame {
+  /* Door frame inside each container */
+  .door-frame {
     width: 100%; /* Take up 100% width of the door container */
     height: 100%; /* Take up 100% height of the door container */
     background: black;
@@ -53,10 +52,10 @@ h1 {
     top: 0;
     left: 0;
     z-index: 1;
-}
+  }
 
-/* Door panel inside each door */
-.door-panel {
+  /* Door panel inside each door */
+  .door-panel {
     width: 100%; /* Same as door frame width */
     height: 100%; /* Same as door frame height */
     background: #c69c8f;
@@ -67,10 +66,10 @@ h1 {
     transform: rotateY(0deg);
     transition: transform 1.5s ease-in-out;
     z-index: 2;
-}
+  }
 
-/* Door handle position */
-.door-handle {
+  /* Door handle position */
+  .door-handle {
     position: absolute;
     right: 10px;
     top: 50%;
@@ -79,15 +78,15 @@ h1 {
     background: gold;
     border-radius: 2px;
     transform: translateY(-50%);
-}
+  }
 
-/* Door panel swing effect on hover */
-.door-container:hover .door-panel {
+  /* Door panel swing effect on hover */
+  .door-container:hover .door-panel {
     transform: rotateY(120deg); /* Swing the door open */
-}
+  }
 
-/* Fade overlay style */
-.fade-overlay {
+  /* Fade overlay style */
+  .fade-overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -98,14 +97,14 @@ h1 {
     transition: opacity 1s ease;
     pointer-events: none;
     z-index: 999; /* Ensure overlay is above the page content */
-}
+  }
 
-.fade-overlay.active {
+  .fade-overlay.active {
     opacity: 1;
-}
+  }
 
-/* Active fade effect on the whole page */
-.fade-active {
+  /* Active fade effect on the whole page */
+  .fade-active {
     background-color: black; /* Fade page to black */
     transition: background-color 1s ease;
-}
+  }

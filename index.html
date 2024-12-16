@@ -4,117 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Magic Door Adventure</title>
-  <style>
+
+  <!-- styling for background-image -->
+  <style src="style-index.css">    
     body {
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      overflow: hidden;
-      position: relative; /* Ensure overlay affects the whole body */
-      background-image: url(assets/images/index.png);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-attachment: fixed;
-      background-color: black;
-    }
-
-    h1 {
-      font-family: Arial, sans-serif;
-      margin-bottom: 20px;
-      position: relative;
-      bottom: 50px;
-      color: white;
-      background-color: #c69c8f;
-      padding: 10px;
-      border-radius: 35px;
-      box-shadow: 5px 5px 5px #333;
-    }
-
-    /* This is the flex container that holds the doors */
-    .door-container-wrapper {
-      display: flex;
-      gap: 150px; /* Space between doors */
-      justify-content: center;
-      align-items: center;
-      z-index: 2; /* Ensure doors appear above overlay */
-    }
-
-    /* Door container styles for each door */
-    .door-container {
-      position: relative;
-      width: 150px; /* Door width */
-      height: 300px; /* Door height */
-    }
-
-    /* Door frame inside each container */
-    .door-frame {
-      width: 100%; /* Take up 100% width of the door container */
-      height: 100%; /* Take up 100% height of the door container */
-      background: black;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 1;
-    }
-
-    /* Door panel inside each door */
-    .door-panel {
-      width: 100%; /* Same as door frame width */
-      height: 100%; /* Same as door frame height */
-      background: #c69c8f;
-      position: absolute;
-      top: 0;
-      left: 0;
-      transform-origin: left center;
-      transform: rotateY(0deg);
-      transition: transform 1.5s ease-in-out;
-      z-index: 2;
-    }
-
-    /* Door handle position */
-    .door-handle {
-      position: absolute;
-      right: 10px;
-      top: 50%;
-      width: 15px;
-      height: 5px;
-      background: gold;
-      border-radius: 2px;
-      transform: translateY(-50%);
-    }
-
-    /* Door panel swing effect on hover */
-    .door-container:hover .door-panel {
-      transform: rotateY(120deg); /* Swing the door open */
-    }
-
-    /* Fade overlay style */
-    .fade-overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: black;
-      opacity: 0;
-      transition: opacity 1s ease;
-      pointer-events: none;
-      z-index: 999; /* Ensure overlay is above the page content */
-    }
-
-    .fade-overlay.active {
-      opacity: 1;
-    }
-
-    /* Active fade effect on the whole page */
-    .fade-active {
-      background-color: black; /* Fade page to black */
-      transition: background-color 1s ease;
+      background-image: url(assets/images/index.jpg);
     }
   </style>
+
+  
+<link rel="stylesheet" href="assets/css/style-index.css">
+
 </head>
 <body>
 
