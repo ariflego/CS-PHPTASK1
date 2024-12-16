@@ -1,3 +1,4 @@
+/* STYLING FOR INDEX.HTML */
 
 body {
     margin: 0;
@@ -12,7 +13,7 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-color: black;
-    bottom: 15px;
+    bottom: 13px;
   }
 
   h1 {
